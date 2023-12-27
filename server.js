@@ -2,7 +2,7 @@ import express from "express"
 import productRouter from "./routes/products.Route.js";
 import userRouter from "./routes/users.Route.js"
 
-// import cors from "cors"
+import cors from "cors"
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 dotenv.config();
@@ -15,7 +15,7 @@ const CONNECTION_URL = process.env.CONNECTION_URL;
 app.use(express.static("../client"))
 
 // third party application permission
-//app.use(cors())
+app.use(cors())
 // middleware for define the json formate
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }))
