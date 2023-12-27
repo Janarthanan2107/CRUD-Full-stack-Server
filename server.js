@@ -2,7 +2,7 @@ import express from "express"
 import productRouter from "./routes/products.Route.js";
 import userRouter from "./routes/users.Route.js"
 
-import cors from "cors"
+// import cors from "cors"
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 dotenv.config();
