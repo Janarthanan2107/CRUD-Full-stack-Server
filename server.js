@@ -15,7 +15,7 @@ const CONNECTION_URL = process.env.CONNECTION_URL;
 app.use(express.static("../client"))
 
 // third party application permission
-app.use(cors())
+//app.use(cors())
 // middleware for define the json formate
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }))
